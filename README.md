@@ -1,5 +1,7 @@
 # Eye Break Extension
 
+My doctor advised me to look away from my PC screen every now and then to reduce eye strain. To help with this, I put together this little extension. :)
+
 ## 20-20-20 Eye Break
 
 A browser extension to remind users to follow the 20-20-20 rule: Every 20 minutes, take a 20-second break to look at something 20 meters away.
