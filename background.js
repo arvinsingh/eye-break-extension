@@ -23,7 +23,22 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         });
 
         // Open a custom reminder page
-        chrome.tabs.create({ url: "reminder.html" });
+        chrome.tabs.create({ url: "reminder.html" }, (tab) => {
+            // Listen for the tab being closed
+            chrome.tabs.onRemoved.addListener(function tabClosedListener(tabId) {
+                if (tabId === tab.id) {
+                    // Restart the timer when the reminder tab is closed
+                    chrome.storage.sync.get(["breakInterval", "reminderEnabled"], (result) => {
+                        if (result.reminderEnabled) {
+                            setAlarm(result.breakInterval || 20);
+                        }
+                    });
+
+                    // Remove this listener after it's triggered
+                    chrome.tabs.onRemoved.removeListener(tabClosedListener);
+                }
+            });
+        });
     }
 });
 

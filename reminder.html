@@ -7,6 +7,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -26,12 +27,34 @@
         p {
             font-size: 18px;
         }
+        .countdown {
+            font-size: 22px;
+            font-weight: bold;
+            color: red;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="message-box">
-        <h1>Take an Eye Break!</h1>
-        <p>Look at something 20 meters away for 20 seconds.</p>
+        <h1>Take an Eye Break! 👀</h1>
+        <p>Look at something 20 meters away for:</p>
+        <p class="countdown" id="countdown">20</p>
+        <button id="closeButton">Close to Restart Timer</button>
     </div>
+
+    <script src="reminder.js"></script>
 </body>
 </html>
