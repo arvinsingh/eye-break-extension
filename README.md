@@ -1,6 +1,7 @@
-# Eye Break Extension
+# Eye Break Extension 
+![Eye Break Extension Screenshot](icons/icon-128.png)
 
-My doctor advised me to look away from my PC screen every now and then to reduce eye strain. To help with this, I put together this little extension. :)
+My doctor advised me to look away from PC screens every now and then to reduce eye strain. To help with this, I put together this little extension. :)
 
 ## 20-20-20 Eye Break
 
@@ -25,6 +26,4 @@ or go to [Add-ons store page](https://microsoftedge.microsoft.com/)
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to tweak this to match your needs. Happy coding! 🚀
+![Reminder tab](images/reminder.png)
